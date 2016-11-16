@@ -50,7 +50,11 @@ int main()
 
 
       while(true){
-
+            int is_prime = mpz_probab_prime_p(N.get_mpz_t(), 10);
+            if(is_prime>=1){
+                   factors[count].push_back(N);
+                   break;
+            }
             ds = trialDivision(N,t0);
             if(ds.a == -1){
                 factors[count].clear();
