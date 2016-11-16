@@ -112,7 +112,7 @@ Divisor trialDivision(mpz_class N, double t0){
         
         
 
-        if(((clock()-(float)t0)/CLOCKS_PER_SEC > 0.15) && (N> 10000000000000000)){
+        if(((clock()-(float)t0)/CLOCKS_PER_SEC > 0.18) && (N> 10000000000000000)){
 
 
             return Divisor(-1,0);
